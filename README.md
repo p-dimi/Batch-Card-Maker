@@ -1,5 +1,5 @@
 # Batch-Card-Maker
-Make game cards in a batch from CSV!
+Make game cards in a batch from CSV! Perfect for rapid game prototyping for print or for Tabletop Simulator.
 
 ## Demonstration
 [!View the Demo](https://youtu.be/8Xv3JhwMKsI)
@@ -21,7 +21,8 @@ Now you can batch make your cards!
 ## The program needs at least one .ttf font file inside its Fonts folder, at least one .csv file in its Csvs folder, and at least one .jpg or .png file in its Cards folder.
 
 ### How it works:
-* The program reads a .png or .jpg image file from inside the Cards folder, 
+* The program reads a .png or .jpg image file from inside the Cards folder, that it will use as your card body.
+* **Preferred card dimensions: 1400 pixels tall and 1000 pixels wide** but it can be any size you want it.
 * The program reads a csv file you have in order to batch create all the cards in the csv file.
 * The csv file should have a specific format:
 ** The first column is dedicated to the card names, the second and third columns are "Card type" columns, the fourth column is the card's text / description - everything else that's written in side it.
