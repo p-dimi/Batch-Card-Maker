@@ -1,6 +1,10 @@
 # Batch-Card-Maker
 Make game cards in a batch from CSV!
 
+## Demonstration
+[!View the Demo](https://youtu.be/8Xv3JhwMKsI)
+
+## How to use:
 You need to have Python 3.0 or higher and pip installed on your computer for this first.
 Usually you will automatically install pip when you install Python.
 
@@ -62,6 +66,3 @@ You will need to input the name of the file in the command line that the program
 It will then save the configurations, and will ask you whether to load them the next time you run the program.
 
 It won't save ALL configurations, only the primary visual ones, and will still ask you about other things like the font to use.
-
-# Demonstration
-[!View the Demo](https://youtu.be/8Xv3JhwMKsI)
