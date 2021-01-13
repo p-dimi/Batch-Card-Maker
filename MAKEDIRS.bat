@@ -1,0 +1,2 @@
+python makedirs.py
+pause
