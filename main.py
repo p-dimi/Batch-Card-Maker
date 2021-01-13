@@ -547,18 +547,22 @@ if new_config == True:
         
         # Body
         for l_num in range(len(wrapped_text)):
-            line = wrapped_text[l_num]  
+            line_main = wrapped_text[l_num]  
             
-            wrapped_t = textwrap.wrap(line, width=row_max_chars)
+            wrapped_t = textwrap.wrap(line_main, width=row_max_chars)
             
-            line = '\n'.join(wrapped_t)
-            
-            # Drop lines in the texts when appropriate
-            body_text = "".join(list(drop_line(line, "\n", lambda x,y: x==".")))
-            
-            spaces = " "*int(( ((row_max_chars * font_spacer_multiplier) - len(line)) / 2 ))
-            line = spaces + line
-            wrapped_text[l_num] = line
+            for l_num_2 in range(len(wrapped_t)):
+                line = wrapped_t[l_num_2]
+                # Drop lines in the texts when appropriate
+                body_text = "".join(list(drop_line(line, "\n", lambda x,y: x==".")))
+
+                spaces = " "*int(( ((row_max_chars * font_spacer_multiplier) - len(line)) / 2 ))
+                line = spaces + line
+
+                wrapped_t[l_num_2] = line
+                
+            line_main = '\n'.join(wrapped_t)
+            wrapped_text[l_num] = line_main
 
         # Convert wrapped text back into single strings
         fin_title = "\n".join(wrapped_title)
@@ -813,18 +817,22 @@ if proceeding == 1 or new_config == False:
         
         # Body
         for l_num in range(len(wrapped_text)):
-            line = wrapped_text[l_num]  
+            line_main = wrapped_text[l_num]  
             
-            wrapped_t = textwrap.wrap(line, width=row_max_chars)
+            wrapped_t = textwrap.wrap(line_main, width=row_max_chars)
             
-            line = '\n'.join(wrapped_t)
-            
-            # Drop lines in the texts when appropriate
-            body_text = "".join(list(drop_line(line, "\n", lambda x,y: x==".")))
-            
-            spaces = " "*int(( ((row_max_chars * font_spacer_multiplier) - len(line)) / 2 ))
-            line = spaces + line
-            wrapped_text[l_num] = line
+            for l_num_2 in range(len(wrapped_t)):
+                line = wrapped_t[l_num_2]
+                # Drop lines in the texts when appropriate
+                body_text = "".join(list(drop_line(line, "\n", lambda x,y: x==".")))
+
+                spaces = " "*int(( ((row_max_chars * font_spacer_multiplier) - len(line)) / 2 ))
+                line = spaces + line
+
+                wrapped_t[l_num_2] = line
+                
+            line_main = '\n'.join(wrapped_t)
+            wrapped_text[l_num] = line_main
 
         # Convert wrapped text back into single strings
         fin_title = "\n".join(wrapped_title)
