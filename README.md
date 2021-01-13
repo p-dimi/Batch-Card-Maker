@@ -67,3 +67,12 @@ You will need to input the name of the file in the command line that the program
 It will then save the configurations, and will ask you whether to load them the next time you run the program.
 
 It won't save ALL configurations, only the primary visual ones, and will still ask you about other things like the font to use.
+
+# Disclaimer:
+I made this program for my own game, and have decided to release it for other people to use.
+Made a few tweaks and added quality of life features for other people to use, but I will not be working on this program further. It does everything I want it to :)
+Feel free to use the program as a basis for your own program or to expand on it!
+
+If you make a new program using this as a basis, credit me.
+
+The program comes as is.
